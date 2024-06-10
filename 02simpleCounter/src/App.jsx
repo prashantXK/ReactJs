@@ -9,7 +9,9 @@ function App() {
 
     if (count < 20) {
       console.log("value added", Math.round(Math.random() * 100 + 1));
-      setcount(count + 1);
+      setcount(prevCount => prevCount + 1);
+      setcount(prevCount => prevCount + 1);
+      setcount(prevCount => prevCount + 1);
     }
   };
 
